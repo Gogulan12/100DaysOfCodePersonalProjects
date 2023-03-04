@@ -78,7 +78,7 @@ function setTime() {
   minuteEl.style.transition = `${minutes === 0 ? "none" : "all 0.5s ease-in"}`;
   secondEl.style.transition = `${seconds === 0 ? "none" : "all 0.5s ease-in"}`;
 
-  timeEl.innerHTML = `${hours}:${
+  timeEl.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
   dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
